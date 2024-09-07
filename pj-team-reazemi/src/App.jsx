@@ -7,9 +7,9 @@ import About from "./About";
 function App() {
   return (
     <BrowserRouter>
-    {/* BrowserRouterで囲みます */}
+      {/* BrowserRouterで囲みます */}
       <div>
-        <h1>React Router Vite デモ</h1>
+        <h1>React Router Vite With KANOデモ</h1>
         <nav>
           <ul>
             <li>
@@ -31,6 +31,4 @@ function App() {
   );
 }
 
-
 export default App;
-
