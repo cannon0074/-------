@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       {/* BrowserRouterで囲みます */}
       <div>
-        <h1>React Router Vite With KANOデモ</h1>
+        <h1>React Router Vite With KANO PMデモ</h1>
         <nav>
           <ul>
             <li>
