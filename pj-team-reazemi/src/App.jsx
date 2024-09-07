@@ -1,13 +1,13 @@
-import reactLogo from './public/react.svg';
-import viteLogo from './public/vite.svg';
-import './App.css';
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+//Routes、Route、Link、BrowserRouterをインポートし、ルーティング
+
+import Home from "./Home";
+import About from "./About";
 
 function App() {
   return (
     <BrowserRouter>
+    {/* BrowserRouterで囲みます */}
       <div>
         <h1>React Router Vite デモ</h1>
         <nav>
