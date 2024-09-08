@@ -1,32 +1,17 @@
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 //Routes、Route、Link、BrowserRouterをインポートし、ルーティング
 
-import Home from "./Home";
-import About from "./About";
+import Test from "./Test";
+import Login from "./pages/login";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* BrowserRouterで囲みます */}
-      <div>
-        <h1>React Router Vite With KANOデモ</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">ホーム</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
+      <Routes>
         {/* ルーティングの設定 */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+        <Route path="/" element={<Test />} />
+        <Route path="login" element={<Login />} />
+      </Routes>
     </BrowserRouter>
   );
 }

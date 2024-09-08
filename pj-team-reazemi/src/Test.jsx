@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import "./App.css";
-
-function App() {
+function Test() {
   return (
-    <>
-      <div></div>
-    </>
+    <div>
+      <ul>
+        <li>
+          <Link to="login">ログイン画面</Link>
+        </li>
+      </ul>
+    </div>
   );
 }
 
-export default App;
+export default Test;
