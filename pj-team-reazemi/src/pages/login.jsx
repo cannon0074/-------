@@ -22,22 +22,23 @@ const LoginBox = styled.div`
 
 const Title = styled.h1`
   font-size: 48px;
-  padding-top: 62px;
-  margin-bottom: 30px;
+  padding: 62px 50px 0px 50px;
   font-weight: normal;
   color: black;
 `;
 
 const Input = styled.input`
-  width: 100%;
-  padding: 10px;
+  width: 60%;
+  padding: 5px 0px 32px 5px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: #ebebeb;
 `;
 
 const Button = styled.button`
-  width: 100%;
+  font-size: 24px;
+  width: 60%;
   padding: 10px;
   margin-top: 20px;
   background-color: #0072ff;
