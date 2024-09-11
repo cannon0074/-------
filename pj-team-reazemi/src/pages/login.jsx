@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const LoginContainer = styled.div`
@@ -54,10 +55,13 @@ const Login = () => {
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const handleLogin = () => {
     console.log("ログインボタンがクリックされました。");
     console.log("ユーザID", userId);
     console.log("パスワード", password);
+    navigate("/ichiran");
   };
 
   return (
