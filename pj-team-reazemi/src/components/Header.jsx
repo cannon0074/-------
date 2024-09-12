@@ -1,4 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React from "react";
 
-<h1>ZP Books</h1>
+const Header = () => {
+  return <h1>ZP Books</h1>;
+};
+
+export default Header;
