@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "userName": "admin",
+      "password": "password",
+      "status": "false"
+    }
+  ],
+  "books": [
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    },
+    {
+      "bookId": 1,
+      "category": "React",
+      "bookName": "Reactの基本",
+      "price": 3000,
+      "bookImage": "https://ztclrwbrgzxmgqxayrio.supabase.co/storage/v1/object/public/book-images/sampleImage.png?t=2024-08-12T22%3A24%3A36.883Z",
+      "description": "【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！"
+    }
+  ],
+  "bookmarks": [
+    {
+      "userId": 1,
+      "bookId": 1
+    }
+  ]
+}
