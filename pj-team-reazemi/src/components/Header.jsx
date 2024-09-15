@@ -2,7 +2,14 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-  return <h1 className="header">ZP Books</h1>;
+  return (
+    <>
+      <section className="header">
+        <div className="header-title">ZP Books</div>
+        <a className="botton" href="#">ログアウト</a>
+      </section>
+    </>
+  );
 };
 
 export default Header;

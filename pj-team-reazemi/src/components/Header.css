@@ -1,3 +1,30 @@
-.header {
-  color: red;
+.header{
+  display: flex;
+  background-color: #0083CC;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header-title{
+font-size: 48px;
+padding-left: 20px;
+}
+
+.botton{
+  display: inline-block;
+  font-size: 24px;
+  text-decoration-line: none;
+  color: aliceblue;
+  padding-right: 20px;
+}
+
+ul{
+  padding-left:0;
+  margin: 0;
+}
+
+li{
+  list-style:none;
+}
+
