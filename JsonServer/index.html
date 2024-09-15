@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ユーザー情報取得</title>
+  </head>
+  <body>
+    <h1>ユーザー情報</h1>
+    <button id="fetch-button">ユーザー情報を取得</button>
+    <p id="login-status"></p>
+
+    <script>
+      // ボタンがクリックされたときにユーザー情報を取得する
+      document
+        .getElementById("fetch-button")
+        .addEventListener("click", async () => {
+          try {
+            // サーバーからユーザー情報を取得
+            // const response = await fetch("http://localhost:3000/login");
+
+            // PUTリクエストを送信
+            // const response = await fetch(`http://localhost:3000/login`, {
+            //   method: "PUT",
+            //   headers: {
+            //     "Content-Type": "application/json",
+            //   },
+            //   body: JSON.stringify({
+            //     userId: "admin",
+            //     password: "password",
+            //   }),
+            // });
+
+            // const response = await fetch(`http://localhost:3000/logout`, {
+            //   method: "PUT",
+            //   headers: {
+            //     "Content-Type": "application/json",
+            //   },
+            //   body: JSON.stringify({
+            //     userId: "admin",
+            //   }),
+            // });
+
+            // // レスポンスが成功したかチェック
+            // if (!response.ok) {
+            //   throw new Error("ユーザー情報の取得に失敗しました");
+            // }
+
+            const response = await fetch(
+              "https://zpbooks-server.onrender.com/book-list/admin"
+            );
+
+            // レスポンスが成功したかチェック
+            if (!response.ok) {
+              throw new Error("ユーザー情報の取得に失敗しました");
+            }
+
+            // ユーザー情報を表示
+            const display = document.getElementById("login-status");
+
+            // レスポンスをJSONとしてパース
+            const users = await response.json();
+            console.log(users);
+            const img = document.createElement("img");
+            img.setAttribute("src", users[0].bookImage);
+            img.setAttribute("width", "300");
+            img.setAttribute("height", "399.26");
+            display.appendChild(img);
+
+            // const { userId, loginStatus, errMsg } = users;
+            // display.innerHTML = `ようこそ、${userId}さん >> ログイン状態: ${
+            //   loginStatus ? "ログイン中" : "ログアウト中"
+            // }`;
+          } catch (error) {
+            console.error("エラーが発生しました:", error.message);
+          }
+        });
+    </script>
+  </body>
+</html>
