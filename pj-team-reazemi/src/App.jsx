@@ -5,6 +5,7 @@ import Test from "./Test";
 import Login from "./pages/login";
 import Ichiran from "./pages/ichiran";
 import Shousai from "./pages/syosai";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
