@@ -59,10 +59,28 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
+    fetch("https://zpbooks-server.onrender.com/login", {
+      method: "PUT",
+      body: JSON.stringify({ userId: "admin", password: "p@ssw0rd" }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((json) => {
+        console.log(json);
+
+        if (json.loginStatus) {
+          navigate("/ichiran");
+        }
+      })
+      .catch((error) => console.log("Error"));
+
     console.log("ログインボタンがクリックされました。");
     console.log("ユーザID", userId);
     console.log("パスワード", password);
-    navigate("/ichiran");
   };
 
   return (
