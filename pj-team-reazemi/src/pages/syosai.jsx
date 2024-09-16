@@ -1,11 +1,19 @@
 import React from "react";
 import ReactLogo from "../assets/react.svg";
+import CartButton from "../components/CartButton";
 import FavoliteButton from "../components/FavoliteButton";
 import styled from "styled-components";
 
 // `p`タグをベースにしたスタイル付きコンポーネント
 const BookName = styled.p`
   font-size: 36px;
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
 `;
 
 const Syosai = () => {
@@ -27,10 +35,10 @@ const Syosai = () => {
         <p>￥2,860（税込）</p>
       </div>
 
-      <div>
-        <button>カートに追加</button>
+      <ButtonGroup>
+        <CartButton></CartButton>
         <FavoliteButton></FavoliteButton>
-      </div>
+      </ButtonGroup>
     </div>
   );
 };
