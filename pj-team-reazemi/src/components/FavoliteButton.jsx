@@ -25,11 +25,25 @@ const ButtonText = styled.p`
   padding-top: 4px;
 `;
 
+const API_URL = "https://zpbooks-server.onrender.com/favorite";
+
 const FavoliteButton = () => {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
     setActive(!active);
+
+    fetch(API_URL, {
+      method: "PUT",
+      body: JSON.stringify({ userId: "admin", bookId: 1 }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((json) => console.log(json));
   };
 
   return (
@@ -37,9 +51,9 @@ const FavoliteButton = () => {
       <div>
         <Button onClick={handleClick} active={active}>
           {active ? (
-            <Img src={Vector_1} alt="" />
+            <Img src={Vector_1} alt="ブックマーク済み" />
           ) : (
-            <Img src={Vector_0} alt="" />
+            <Img src={Vector_0} alt="未ブックマーク" />
           )}
           <ButtonText>ブックマーク</ButtonText>
         </Button>
