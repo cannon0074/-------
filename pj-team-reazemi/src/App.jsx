@@ -5,6 +5,7 @@ import Test from "./Test";
 import Login from "./pages/login";
 import Ichiran from "./pages/ichiran";
 import Shousai from "./pages/syosai";
+import Logout from "./pages/logout";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="ichiran" element={<Ichiran />} />
         <Route path="/shousai" element={<Shousai />} />
+        <Route path="logout" element={<Logout />} />
       </Routes>
     </BrowserRouter>
   );
