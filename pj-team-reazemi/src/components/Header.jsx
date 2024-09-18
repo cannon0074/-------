@@ -1,12 +1,13 @@
 import React from "react";
 import "./Header.css";
+import Logout from "../pages/logout";
 
 const Header = () => {
   return (
     <>
       <section className="header">
         <div className="header-title">ZP Books</div>
-        <a className="botton" href="#">ログアウト</a>
+        <Logout />
       </section>
     </>
   );
