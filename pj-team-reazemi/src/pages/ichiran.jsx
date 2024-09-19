@@ -16,41 +16,47 @@ const ItemContainer = styled.div`
   justify-content: center;
 `;
 
+const IchiranContainer = styled.div`
+  padding: 30px 49px 0px 48px;
+  background-color: #e6e6e6;
+`;
+
 const Ichiran = () => {
   return (
     <>
       <Header />
-      <BackColor>
-        <div>
-          <UserInfo />
-          <h1>書籍一覧</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="">React</a>
-              </li>
-              <li>
-                <a href="">Laravel</a>
-              </li>
-              <li>
-                <a href="">Node.js</a>
-              </li>
-              <li>
-                <a href="">MySQL</a>
-              </li>
-            </ul>
-          </nav>
-          <ItemContainer>
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-          </ItemContainer>
-          {/* <BookItem>
+      <IchiranContainer>
+        <BackColor>
+          <div>
+            <UserInfo />
+            <h1>■ 書籍一覧</h1>
+            <nav>
+              <ul>
+                <li>
+                  <a href="">React</a>
+                </li>
+                <li>
+                  <a href="">Laravel</a>
+                </li>
+                <li>
+                  <a href="">Node.js</a>
+                </li>
+                <li>
+                  <a href="">MySQL</a>
+                </li>
+              </ul>
+            </nav>
+            <ItemContainer>
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+              <Item />
+            </ItemContainer>
+            {/* <BookItem>
             <Link to="/shousai">
               <div>
                 <img
@@ -63,8 +69,9 @@ const Ichiran = () => {
               </div>
             </Link>
           </BookItem> */}
-        </div>
-      </BackColor>
+          </div>
+        </BackColor>
+      </IchiranContainer>
     </>
   );
 };
