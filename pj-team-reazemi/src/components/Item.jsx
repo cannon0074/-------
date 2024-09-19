@@ -15,6 +15,11 @@ const BookItem = styled.div`
   margin-bottom: 20px;
 `;
 
+const ItemComment = styled.div`
+  font-size: 16px;
+  margin: 0px 20px 0px 20px;
+`;
+
 const Item = () => {
   return (
     <>
@@ -26,7 +31,11 @@ const Item = () => {
               alt=""
               style={{ width: "135.25px", height: "180px" }}
             />
-            <p>モダンJavaScriptの基本から始めるReact実践の教科書...</p>
+            <ItemComment>
+              <p style={{ color: "black" }}>
+                モダンJavaScriptの基本から始めるReact実践の教科書...
+              </p>
+            </ItemComment>
             <p style={{ color: "red" }}>価格：￥2,860（税込）</p>
           </div>
         </Link>
