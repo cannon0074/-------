@@ -7,7 +7,7 @@ const BookItem = styled.div`
   width: 250px;
   height: 350px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding-top: 34.5px;

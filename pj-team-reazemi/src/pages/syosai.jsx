@@ -20,7 +20,7 @@ const ButtonGroup = styled.div`
 `;
 
 const UserInfoContainer = styled.div`
-  padding: 30px 49px 0px 48px;
+  padding: 30px 49px 165px 48px;
   background-color: #e6e6e6;
 `;
 
@@ -32,12 +32,9 @@ const BookItem = styled.div`
   width: 500px;
   height: 600px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-top: 34.5px;
-  margin-right: 23.25px;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +42,11 @@ const BookItem = styled.div`
 
 const ShosaiContainer = styled.div`
   display: flex;
-  justify-content: center;
+`;
+
+const Title = styled.div`
+  font-size: 36px;
+  font-weight: 700;
 `;
 
 const Syosai = () => {
@@ -56,38 +57,46 @@ const Syosai = () => {
         <UserInfoContainer>
           <UserInfo />
           <h2>■ 商品詳細</h2>
-          <ShosaiContainer>
-            <div>
+          <div>
+            <ShosaiContainer>
               <BookItem>
                 <div>
                   <img
                     src={ItemImg}
                     alt=""
-                    style={{ width: 300, height: 399.26 }}
+                    style={{ width: "300px", height: "399.26px" }}
                   />
                 </div>
               </BookItem>
-              <div>
+              <div style={{ width: "763px", paddingLeft: "32px" }}>
                 <div>
-                  <div>【書籍名】</div>
-                  <BookName>
-                    モダンJavaScriptの基本から始めるReact実践の教科書(最新ReactHooks対応)(Informatics&IDEA)
-                  </BookName>
-                  <div>【概要】</div>
-                  <p>
-                    【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！
-                  </p>
-                  <div>【価格】</div>
-                  <p>￥2,860（税込）</p>
+                  <div>
+                    <Title>[ 書籍名 ]</Title>
+                    <BookName>
+                      モダンJavaScriptの基本から始めるReact実践の教科書(最新ReactHooks対応)(Informatics&IDEA)
+                    </BookName>
+                  </div>
+                  <div style={{ paddingTop: "32px" }}>
+                    <Title>[ 概要 ]</Title>
+                    <p style={{ fontSize: "24px" }}>
+                      【令和最新版】Reactのすべてがこの一冊で網羅できる完全版！これを持たずにReactは語れない！
+                    </p>
+                  </div>
+                  <div style={{ paddingTop: "32px" }}>
+                    <Title>[ 価格 ]</Title>
+                    <p style={{ color: "#FF0D0D", fontSize: "36px" }}>
+                      ￥2,860（税込）
+                    </p>
+                  </div>
                 </div>
 
-                <ButtonGroup>
+                <ButtonGroup style={{ paddingTop: "32px" }}>
                   <CartButton></CartButton>
                   <FavoliteButton></FavoliteButton>
                 </ButtonGroup>
               </div>
-            </div>
-          </ShosaiContainer>
+            </ShosaiContainer>
+          </div>
         </UserInfoContainer>
       </BackColor>
     </>

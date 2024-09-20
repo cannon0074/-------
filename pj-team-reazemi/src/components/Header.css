@@ -1,17 +1,18 @@
-.header{
+.header {
   display: flex;
-  background-color: #0083CC;
+  background-color: #0083cc;
   color: aliceblue;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 
-.header-title{
-font-size: 48px;
-padding-left: 20px;
+.header-title {
+  font-size: 48px;
+  padding-left: 20px;
 }
 
-.botton{
+.botton {
   display: inline-block;
   font-size: 24px;
   text-decoration-line: none;
@@ -19,12 +20,11 @@ padding-left: 20px;
   padding-right: 20px;
 }
 
-ul{
-  padding-left:0;
+ul {
+  padding-left: 0;
   margin: 0;
 }
 
-li{
-  list-style:none;
+li {
+  list-style: none;
 }
-
