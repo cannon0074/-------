@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: flex;
   background-color: #0083cc;
   color: aliceblue;
@@ -11,6 +11,7 @@
   font-size: 48px;
   padding-left: 20px;
 }
+*/
 
 .botton {
   display: inline-block;
@@ -27,4 +28,4 @@ ul {
 
 li {
   list-style: none;
-}
+} 
