@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const LogoutButton = styled.div`
   cursor: pointer;
+  margin-right: 20px;
 `;
 
 function Logout() {

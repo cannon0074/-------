@@ -8,6 +8,7 @@ const UserInfoArea = styled.div`
   background-color: #0094e5;
   color: #fff;
   font-size: 24px;
+  height: 100px;
 `;
 
 const FlexContainer = styled.div`
